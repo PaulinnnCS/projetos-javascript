@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa">
+        <h2 class="text" >Gerador de senhas</h2>
+        <input id="senha" class="senha text" type="text">
+        <div class="checkbox-list">
+            <div class="checkbox-item">
+                <label for="" class="text">Tamanho da senha</label>
+                <input type="number" min="8" max="16" id="input-number">
+            </div>
+            <div class="checkbox-item">
+                <label for="" class="text">Letras maiusculas</label>
+            <input type="checkbox" name="" id="checkbox-upper">
+            </div>
+            <div class="checkbox-item">
+                <label for="" class="text">Numeros</label>
+             <input type="checkbox" name="" id="checkbox-number">
+            </div>
+            <div class="checkbox-item">
+                <label for="" class="text">Caracteres especiais</label>
+                <input type="checkbox" name="" id="checkbox-special">
+            </div>
+        </div>
+        <div class="caixa-btn">
+            <button id="btn-gerador" class="btn text" onclick="gerarSenha()">Gerar senha</button>
+            <button id="copiar" class="btn text" onclick="copiarSenha()">Copiar</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

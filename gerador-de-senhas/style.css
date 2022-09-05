@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #f0e1fa, #c181ec);
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background: #b494df;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #8f6eb9;
+}
+
+h2 {
+    align-self: center;
+    font-size: 1.6rem;
+    color: #efe3ff;
+}
+
+.caixa-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    height: 70px;
+    width: 150px;
+    border: solid 1px #ebd6fa;
+    background: #dfd4ee;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px #d6bbfa, 0 6px #a98bd1;
+    color: #9369b9;
+}
+
+.btn:hover {
+    background: #e4ddee;
+}
+
+.senha {
+    width: 350px;
+    height: 100px;
+    padding: 0 20px;
+    
+    outline: none;
+    align-self: center;
+
+    border: solid 1px #c9b3d8;
+    border-radius: 5px;
+
+    text-align: center;
+    font-size: 2rem;
+    color: #9369b9;
+}
+
+.text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.checkbox-list {
+    width: 350px;
+    margin: 10px auto;
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 10px;
+    color: #efe3ff;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    display: grid;
+    place-content: center;
+    border: solid 2px #8f6eb9;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    background-color: #8f6eb9;
+    transform: scale(0);
+    width: 14px;
+    height: 14px;
+    transition: 200ms ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:hover::before {
+    background-color: #ac91cf;
+    
+}
+
+input[type="checkbox"]:hover {
+    border-color: #ac91cf;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    border: solid 2px #8f6eb9;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
