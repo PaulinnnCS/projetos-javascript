@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Varela+Round&display=swap');
+
+:root {
+    --main-font:'Montserrat';
+
+    --list-field: #adc2eb;
+    --input-border: #5c85d6;
+    
+    --btn-add: #58be66;
+    --btn-add-border: #65c56d;
+    --btn-add-shadow: #4da559;
+    --btn-add-hover: #5ac569;
+
+    --btn-remove: #b93232;
+    --btn-remove-border: #e45d5d;
+    --btn-remove-shadow: #af3737;
+    --btn-remove-hover: #cc3b3b;
+
+    --btn-shadow-back: #97acd3;
+
+    --check: #4775d1;
+    --check-box-point-hover: #598ef8;
+
+    --btn-clear-all: #4775d1;
+    --btn-clear-all-border: #618de4;
+    --btn-clear-shadow: #3366cc;
+    --btn-clear-all-hover: #5281df;
+
+    --scroll: #4775d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #adc2eb, #3366cc );
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--list-field);
+    width: 550px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px #6e8dca;
+}
+
+header {
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: 0 1px  #dadada;
+}
+
+/*INPUT*/
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.input {
+   height: 50px;
+   width: 460px;
+   padding: 0 25px;
+   margin-right: 10px;
+   margin-top: 2px;
+   border: solid 1px var(--input-border);
+   border-radius: 3px;
+   font-size: 1.2rem;
+   font-family: var(--main-font), cursive;
+}
+
+.input:focus{
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*BUTAO ADD*/
+
+.btn-add {
+    width: 50px;
+    height: 50px;
+    
+    text-align: center;
+    line-height: 50px;
+    font-size: 2.5rem;
+    
+    color: #FFFFFF;
+    text-shadow: 0 1px  #dadada;
+    background-color: var(--btn-add);
+    border: solid 1px var(--btn-add-border);
+    border-radius: 3px;
+    box-shadow: 0 3px var(--btn-add-shadow), 0 5px var(--btn-shadow-back);
+}
+
+.btn-add:hover {
+    background-color: var(--btn-add-hover);
+}
+
+/*LISTA*/
+
+.list-field {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    height: 450px;
+    width: 100%;
+    overflow: auto;
+    border-bottom: solid 2px #FFFFFF;
+}
+
+.list {
+    margin-top: 25px;
+    list-style: none;
+    width: 600px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: 50px 400px 0px;
+    margin-bottom: 15px;
+}
+
+.text-list {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-right: 15px;
+    font-family: var(--main-font);
+    font-size: 0.9rem;
+}
+
+/*CHECK BOX*/
+
+.check {
+    align-self: center;
+    width: 25px;
+    height: 25px;
+
+    appearance: none;
+    background-color: #FFFFFF;
+    border: 2px solid var(--check);
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.check:hover {
+    border-color: var(--check-box-point-hover);
+}
+
+.check::before {
+    content: "";
+    border-radius: 100%;
+    background-color: var(--check);
+    width: 15px;
+    height: 15px;
+    transform: scale(0);
+    transition: 300ms transform ease-in-out;
+}
+
+.check:hover::before  {
+    background-color: var(--check-box-point-hover);
+}
+
+.check:checked::before {
+    transform: scale(1);
+}
+
+/*BOTAO REMOVE*/
+
+.btn-remove {
+    align-self: center;
+    width: 35px;
+    height: 35px; 
+    background-color: var(--btn-remove);
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0 1px  #dadada;
+    border: solid 1px var(--btn-remove-border);
+    border-radius: 3px;
+    box-shadow: 0 2px var(--btn-remove-shadow), 0 5px var(--btn-shadow-back);
+    font-size: 1.5rem;
+}
+
+.btn-remove:hover {
+    background-color: var(--btn-remove-hover);
+}
+
+/*BOTAO CLEAR*/
+
+.clear-all {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: var(--main-font);
+    text-shadow: 0 1px  #dadada;
+
+    background-color: var(--btn-clear-all);
+    border: solid 1px var(--btn-clear-all-border);
+    border-radius: 3px;
+
+    width: calc(100% - 10px);
+    height: 56px;
+    
+    margin: 8px 5px;
+    box-shadow: 0 3px var(--btn-clear-shadow), 0 5px var(--btn-shadow-back);
+}
+
+.clear-all:hover {
+    background-color: var(--btn-clear-all-hover);
+}
+
+/* SCROLL */
+
+div::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    background-color: #FFFFFF;
+} 
+
+::-webkit-scrollbar-thumb:vertical, div::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--scroll);
+} 
+
+
+/*RISCO*/
+
+.through {
+    text-decoration: line-through;
+}
