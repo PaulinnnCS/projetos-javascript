@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="imagem/png" href="/img/clock.png" />
+</head>
+<body>
+    
+    <div class="cron">
+        <h2 class="text">Cronometro</h2>
+        <div id="clock" class="box-clock text">00:00:00<p id="ms">.00</p></div>
+        <div class="control">
+            <button onclick="start_cron()" class="start text">iniciar</button>
+            <button onclick="pause_cron()" class="pause text">pausar</button>
+            <button onclick="stop_cron()" class="stop text">parar</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(72, 75, 105);
+    min-height: 100vh;
+}
+
+.cron {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.box-clock {
+    padding: 20px 10px;
+    font-size: 25px;
+    background-color: rgb(58, 60, 82);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text {
+    color: #FFF;
+    text-shadow: 0px 1px rgb(219, 207, 207);
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#ms {
+    font-size: 10px;
+}
+
+h2.text {
+    margin-bottom: 10px;
+}
+
+.control {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control button {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.start {
+    background: rgb(17, 146, 45);
+    border:solid 0.5px rgb(30, 165, 59);
+    box-shadow: 0px 3px rgb(14, 121, 37);
+}
+
+.start:hover{
+    background: rgb(43, 150, 66);
+}
+
+.pause {
+    background: rgb(38, 120, 187);
+    border: solid 0.5px rgb(44, 132, 204);
+    box-shadow: 0px 3px rgb(32, 99, 155);
+}
+
+.pause:hover {
+    background: rgb(46, 128, 196);
+
+}
+
+.stop {
+    background: rgb(177, 25, 25);
+    border: solid 0.5px rgb(194, 37, 37);
+    box-shadow: 0px 3px rgb(143, 21, 21);
+}
+
+.stop:hover {
+    background: rgb(196, 38, 38);
+}
