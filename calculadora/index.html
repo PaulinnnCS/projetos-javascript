@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <p id="equacao" class="text equacao"></p>
+            <p id="screen" class="text screen-result">0</p></div>
+        <div class="keys">
+            <div class="clear-number">
+                <div class="clear">
+                    <div class="button c"><button onclick="pressButton('C')" class="text">C</button></div>
+                    <div class="button"><button onclick="pressButton('apagar')" class="text"><img src="https://paulinnncs.github.io/projetos-javascript/calculadora/img/delete_icon_128881.svg" alt=""></button></div>
+                </div>
+                <div class="numbers">
+                    <div class="button"><button onclick="pressButton('9')" class="text">9</button></div>
+                    <div class="button"><button onclick="pressButton('8')" class="text">8</button></div>
+                    <div class="button"><button onclick="pressButton('7')" class="text">7</button></div>
+                    <div class="button"><button onclick="pressButton('6')" class="text">6</button></div>
+                    <div class="button"><button onclick="pressButton('5')" class="text">5</button></div>
+                    <div class="button"><button onclick="pressButton('4')" class="text">4</button></div>
+                    <div class="button"><button onclick="pressButton('3')" class="text">3</button></div>
+                    <div class="button"><button onclick="pressButton('2')" class="text">2</button></div>
+                    <div class="button"><button onclick="pressButton('1')" class="text">1</button></div>
+                    <div class="button"><button onclick="pressButton('.')" class="text">,</button></div>
+                    <div class="button zero"><button onclick="pressButton('0')" class="text">0</button></div>
+                </div>
+            </div>
+            <div class="operator">
+                <div class="button"><button onclick="pressButton('/')" class="text">/</button></div>
+                <div class="button"><button onclick="pressButton('*')" class="text">*</button></div>
+                <div class="button"><button onclick="pressButton('+')" class="text">+</button></div>
+                <div class="button"><button onclick="pressButton('-')" class="text">-</button></div>
+                <div class="button result"><button onclick="pressButton('=')" class="text">=</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://paulinnncs.github.io/projetos-javascript/calculadora/script.js"></script> 
+</body>
+</html>
